@@ -6,6 +6,11 @@
     color: white;
 }
 
+.inverse-red {
+    background-color: $primary-color;
+    color: red;
+}
+
 // * Nesting
 nav {
    ol {
@@ -41,5 +46,20 @@ nav {
 
 // * Extensions
 .message {
-    @extend extend.message-shared;
+    @extend %message-shared;
+}
+
+.success {
+    @extend %message-shared;
+    border-color: green;
+}
+
+.error {
+    @extend %message-shared;
+    border-color: red;
+}
+
+.warning {
+    @extend %message-shared;
+    border-color: yellow;
 }

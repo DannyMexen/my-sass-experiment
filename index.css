@@ -1,12 +1,9 @@
-/* Error: compound selectors may no longer be extended.
- * Consider `@extend extend, .message-shared` instead.
- * See http://bit.ly/ExtendCompound for details.
- * 
+/* Error: Undefined variable.
  *    ,
- * 44 |     @extend extend.message-shared;
- *    |             ^^^^^^^^^^^^^^^^^^^^^
+ * 10 |     background-color: $primary-color;
+ *    |                       ^^^^^^^^^^^^^^
  *    '
- *   index.scss 44:13  root stylesheet */
+ *   index.scss 10:23  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -16,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: compound selectors may no longer be extended.\a Consider `@extend extend, .message-shared` instead.\aSee http://bit.ly/ExtendCompound for details.\a\a    \2577 \a 44 \2502      @extend extend.message-shared;\a    \2502              ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   index.scss 44:13  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 10 \2502      background-color: $primary-color;\a    \2502                        ^^^^^^^^^^^^^^\a    \2575 \a   index.scss 10:23  root stylesheet";
 }
