@@ -3,6 +3,11 @@ body {
   color: #333;
 }
 
+.inverse {
+  background-color: #333;
+  color: white;
+}
+
 nav ol {
   margin: 0;
   padding: 0;
