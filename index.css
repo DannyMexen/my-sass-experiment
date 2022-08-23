@@ -60,4 +60,17 @@ nav a {
   text-decoration: none;
 }
 
+.container {
+  display: flex;
+}
+
+article[role=main] {
+  width: 62.5%;
+}
+
+aside[role=complementary] {
+  width: 31.25%;
+  margin-left: auto;
+}
+
 /*# sourceMappingURL=index.css.map */
