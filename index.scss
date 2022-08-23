@@ -1,5 +1,6 @@
 @use 'base';
 @use 'extend';
+@use 'mixins';
 
 .inverse {
     background-color: base.$primary-color;
@@ -7,7 +8,7 @@
 }
 
 .inverse-red {
-    background-color: $primary-color;
+    background-color: base.$primary-color;
     color: red;
 }
 
@@ -26,40 +27,4 @@ nav {
     padding: 6px 12px;
     text-decoration: none;
    }
-}
-
-// Mixins
-@mixin theme($theme: DarkGray) {
-    background: $theme;
-    box-shadow: 0 0 1px rgba($theme, .25);
-}
-
-.info {
-    @include theme;
-}
-.alert {
-    @include theme($theme: DarkRed);
-}
-.success {
-    @include theme($theme: DarkGreen);
-}
-
-// * Extensions
-.message {
-    @extend %message-shared;
-}
-
-.success {
-    @extend %message-shared;
-    border-color: green;
-}
-
-.error {
-    @extend %message-shared;
-    border-color: red;
-}
-
-.warning {
-    @extend %message-shared;
-    border-color: yellow;
 }

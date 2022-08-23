@@ -1,17 +1,63 @@
-/* Error: Undefined variable.
- *    ,
- * 10 |     background-color: $primary-color;
- *    |                       ^^^^^^^^^^^^^^
- *    '
- *   index.scss 10:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 10 \2502      background-color: $primary-color;\a    \2502                        ^^^^^^^^^^^^^^\a    \2575 \a   index.scss 10:23  root stylesheet";
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
 }
+
+.warning, .error, .success-message, .message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success-message {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
+
+.info {
+  background: DarkGray;
+  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+}
+
+.alert {
+  background: DarkRed;
+  box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
+}
+
+.success {
+  background: DarkGreen;
+  box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
+}
+
+.inverse {
+  background-color: #333;
+  color: white;
+}
+
+.inverse-red {
+  background-color: #333;
+  color: red;
+}
+
+nav ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.css.map */

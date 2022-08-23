@@ -11,3 +11,23 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+// * Extensions
+.message {
+    @extend %message-shared;
+}
+
+.success-message {
+    @extend %message-shared;
+    border-color: green;
+}
+
+.error {
+    @extend %message-shared;
+    border-color: red;
+}
+
+.warning {
+    @extend %message-shared;
+    border-color: yellow;
+}
