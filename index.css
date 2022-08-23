@@ -1,40 +1,20 @@
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333;
-}
+/* Error: compound selectors may no longer be extended.
+ * Consider `@extend extend, .message-shared` instead.
+ * See http://bit.ly/ExtendCompound for details.
+ * 
+ *    ,
+ * 44 |     @extend extend.message-shared;
+ *    |             ^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   index.scss 44:13  root stylesheet */
 
-.inverse {
-  background-color: #333;
-  color: white;
-}
-
-nav ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-nav li {
-  display: inline-block;
-}
-nav a {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  padding: 6px 12px;
-  text-decoration: none;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: compound selectors may no longer be extended.\a Consider `@extend extend, .message-shared` instead.\aSee http://bit.ly/ExtendCompound for details.\a\a    \2577 \a 44 \2502      @extend extend.message-shared;\a    \2502              ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   index.scss 44:13  root stylesheet";
 }
-
-.info {
-  background: DarkGray;
-  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
-}
-
-.alert {
-  background: DarkRed;
-  box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
-}
-
-.success {
-  background: DarkGreen;
-  box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
-}
-
-/*# sourceMappingURL=index.css.map */

@@ -1,4 +1,5 @@
 @use 'base';
+@use 'extend';
 
 .inverse {
     background-color: base.$primary-color;
@@ -36,4 +37,9 @@ nav {
 }
 .success {
     @include theme($theme: DarkGreen);
+}
+
+// * Extensions
+.message {
+    @extend extend.message-shared;
 }
